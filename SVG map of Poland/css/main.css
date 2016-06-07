@@ -1,0 +1,77 @@
+#map {
+  width: 960px;
+  margin: 50px auto;
+}
+
+.land
+{
+  fill: #CCCCCC;
+  fill-opacity: 1;
+  stroke:white;
+  stroke-opacity: 1;
+  stroke-width:0.5;
+}
+
+.land.active {
+  fill: #2196F3;
+  fill-opacity: .7;
+}
+
+.land:hover {
+  fill: #2196F3;
+  fill-opacity: .6;
+}
+
+.mapSVG {
+  float: left;
+}
+
+.info {
+  width: 320px;
+  height: 580px;
+  background: #2196F3;
+  float: left;
+}
+
+.info h1 {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+
+.info p {
+  color: white;
+  padding-left: 20px;
+}
+
+.tooltip {
+  top:-999px;
+  left:-999px;
+  position: absolute;
+  font-size:13px;
+  display:inline-block;
+  padding:15px 10px;
+  color:#fff;
+  background: rgba(22, 22, 22, 0.3);
+  width:200px;
+  border-radius:3px;
+  text-align: center;
+  font-family:sans-serif;
+  transform:translate(-50%, 0);
+}
+.tooltip::after {
+  width:0;
+  height:0;
+  border:5px solid transparent;
+  border-top-color:  rgba(22, 22, 22, 0.3);
+  position: absolute;
+  left:50%;
+  bottom:-10px;
+  transform:translate(-50%, 0);
+  content:'';
+}
+
+footer {
+  width: 960px;
+  margin: 20px auto;
+}
